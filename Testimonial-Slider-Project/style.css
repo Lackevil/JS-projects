@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: serif;
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews {
+  max-width: 544px;
+  background: royalblue;
+  padding: 60px 30px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.reviews__image {
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
