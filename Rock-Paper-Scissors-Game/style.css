@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.game__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.game__subtitle {
+  margin-bottom: 10px;
+}
+
+.game__moves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.game__btn {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 46px;
+  transition: opacity .2s ease;
+}
+
+.game__btn:hover {
+  opacity: .6;
+}
+
+.rock {
+  background: red;
+}
+
+.paper {
+  background: rgb(33, 150, 243);
+}
+
+.scissors {
+  background: rgb(76, 175, 80);
+}
+
+.game__result {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* .game__scores {
+} */
+
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.scores__players {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+#userScore {
+  color: rgb(33, 150, 243);
+}
+
+#computerScore {
+  color: red;
+}

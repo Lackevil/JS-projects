@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="password-generator">
+        <h2 class="password-generator__title">Random Password Generator</h2>
+        <div class="password-generator__result">
+          <p class="password-generator__password">Create Password</p>
+          <button class="password-generator__copy" onclick="copyToClipBoard()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <rect
+                x="128"
+                y="128"
+                width="336"
+                height="336"
+                rx="57"
+                ry="57"
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                d="M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+          </button>
+        </div>
+        <button class="password-generator__submit" onclick="generatePassword()">
+          Generate
+        </button>
+      </article>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

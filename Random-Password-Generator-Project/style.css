@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background: #ffc0cb3c;
+  font-family: monospace;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-generator {
+  width: 540px;
+  background: #ffc0cb;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.password-generator__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.password-generator__result {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-generator__password {
+  font-size: 24px;
+  color: #666;
+  font-family: monospace;
+}
+
+.password-generator__copy {
+  width: 30px;
+  height: 30px;
+  background: none;
+  transition: opacity .2s ease;
+}
+
+.password-generator__copy:hover {
+  opacity: .3;
+}
+
+.password-generator__submit {
+  padding: 10px 20px;
+  text-align: center;
+  background: #000;
+  font-size: 21px;
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.2s ease;
+}
+
+.password-generator__submit:hover {
+  opacity: 0.7;
+}
