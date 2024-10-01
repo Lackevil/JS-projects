@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Charater Counter</title>
+    <link rel="stylesheet" href="sytle.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="char-counter">
+        <h3 class="char-counter__title">Real-time Charater Counter</h3>
+        <textarea class="char-counter__textarea" name="textarea" id="teaxtArea" placeholder="Please write your text here..." maxlength="50" oninput="countChar()"></textarea>
+        <div class="char-counter__result">
+          <p class="char-counter__total">Total Charaters: <span id="total">0</span></p>
+          <p class="char-counter__remaining">Remaining: <span id="remaining">50</span></p>
+        </div>
+      </article>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

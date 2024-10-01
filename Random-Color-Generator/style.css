@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* Header */
+
+.header {
+  padding: 20px 0;
+}
+
+.header__title {
+  color: #000;
+  text-align: center;
+}
+
+/* Colors */
+
+.colors {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+/* .colors__item {
+} */
+
+.item-colors {
+  border: 2px solid #333;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.item-colors__title {
+  text-align: center;
+}

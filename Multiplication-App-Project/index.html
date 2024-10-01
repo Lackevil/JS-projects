@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication App Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="app">
+        <p class="app__score">score: <span id="score"></span></p>
+        <h2 class="app__question">What is <span id="firstNum"></span> multiply by <span id="secondNum"></span>?</h2>
+        <form class="app__form" action="#">
+          <input class="app__input" type="text" placeholder="Enter your answer">
+          <button class="app__submit" id="submit" type="submit" onclick="proccess()">Submit</button>
+        </form>
+      </article>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
