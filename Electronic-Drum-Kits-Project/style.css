@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+body {
+  background: #ffc0cb;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Kits */
+
+.kits {
+}
+
+.kits__title {
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  filter: drop-shadow(0 3px 3px #555);
+  margin-bottom: 50px;
+  font-size: 55px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kits__title > svg {
+  width: 40px;
+}
+
+.kits__sounds {
+  display: flex;
+  gap: 20px;
+}
+
+.sounds-kits {
+}
+
+.sounds-kits__item {
+  cursor: pointer;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 30px 50px;
+  width: 200px;
+  color: #fff;
+  font-size: 27px;
+  font-family: cursive;
+  text-align: center;
+  text-shadow: 0 0 5px #000;
+}
+
+.sounds-kits__item:hover {
+  color: #ffc0cb;
+}
+
+/* .sounds-kits__item:active {
+} */
+
+#crash {
+  background: url('./img/crash.png') top / cover no-repeat;
+}
+
+#kick {
+  background: url('./img/kick.png') top / cover no-repeat;
+}
+
+#snare {
+  background: url('./img/snare.png') top / cover no-repeat;
+}
+
+#tom {
+  background: url('./img/tom.png') top / cover no-repeat, #fff;
+}
+
+#crash:active,
+#kick:active,
+#snare:active,
+#tom:active {
+  background-size: 110%;
+}
+
+audio {
+  visibility: hidden;
+}
