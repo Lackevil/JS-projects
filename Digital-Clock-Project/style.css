@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') top / cover no-repeat;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.clock {
+  width: 320px;
+}
+
+.clock__title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clock__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .item-clock {
+} */
+
+.item-clock__hours,
+.item-clock__minutes,
+.item-clock__seconds {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: slateblue;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  flex: 0 1 30%;
+}
+
+#hours,
+#minutes,
+#seconds {
+  font-size: 50px;
+  padding: 10px 0;
+}
+
+.item-clock__hours span:last-child,
+.item-clock__minutes span:last-child,
+.item-clock__seconds span:last-child {
+  width: 100%;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: darkblue;
+  padding: 7px 0;
+}
+
+.item-clock__hours {
+}
+
+.item-clock__minutes {
+}
+
+.item-clock__seconds {
+}
